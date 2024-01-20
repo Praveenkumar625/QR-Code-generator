@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    min-height: 100vh;
+    background-color: #15233d;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png");
+}
+
+.Qrcode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 34px;
+    border-radius: 5px;
+    /* border: 1px solid red; */
+    opacity: 0;
+}
+
+.Qrcode img {
+    width: 50%;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    height: 250px;
+    padding: 20px 25px 0;
+    transition: height 0.2s ease;
+    -webkit-transition: height 0.2s ease;
+    -moz-transition: height 0.2s ease;
+    -ms-transition: height 0.2s ease;
+    -o-transition: height 0.2s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+   
+}
+
+header h1{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+header p{
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+
+.container form{
+    margin: 20px 0 25px;
+}
+
+.form input,
+.form button{
+    margin-top: 5px;
+ width: 100%;
+ height: 55%;
+ border: none;
+ outline: none;
+ border-radius: 5px;
+ transition: 0.1s ease;
+}
+
+
+.form input{
+
+    font-size: 1.1 rem;
+    padding: 0.8rem;
+    border: 1px solid #999;
+}
+
+.form input:focus{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.form button{
+    color: #eeeeee;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.05rem;
+    background: #15233d;
+    padding: 0.8rem;
+    transition: 0.4s ease;
+}
+
+.form button:hover{
+    color: #eeeeee;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.05rem;
+    background: #051229;
+    padding: 0.8rem;
+}
+
+
+.container.active {
+    height: 430px;
+}
+
+.container.active .Qrcode {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.2s 0.2s ease;
+}
+
+
+
+.project-info {
+    background: linear-gradient(45deg, #ff4e5186, #fc913a85);
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffffb9;
+    text-align: center;
+    transition: background 0.4s ease;
+    max-width: 40%;
+    height: 30vh;
+    margin-right: 5rem; 
+    text-align: center;
+    line-height: 2rem;
+    cursor: default;
+    position: relative;
+}
+
+span , h2{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.project-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.project-info h2::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.7s ease;
+}
+
+.project-info:hover h2::after {
+    width: 45%;
+}
+
+
+
+
+
