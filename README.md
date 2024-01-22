@@ -6,7 +6,7 @@ QR Code Generator is a web application implemented using HTML, CSS, and JavaScri
 
 ## Live Demo
 
-The live version of the "Karthik Arts" portfolio can be accessed at https://qr-generator-flame.vercel.app/.
+The live version of the "QR Code Generator" can be accessed at https://qr-generator-flame.vercel.app/.
 
 
 ![image](https://github.com/Praveenkumar625/QR-Code-generator/assets/116333254/50f9cc62-53ed-4ed8-962b-2928a6d83acd)
